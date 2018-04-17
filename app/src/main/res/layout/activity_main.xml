@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/chart_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/chart_container2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:enabled="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:onClick="startRecording"
+            android:text="@string/button_start" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:enabled="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:onClick="stopRecording"
+            android:text="@string/button_stop" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnChoose"
+                android:text="jTrans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="chooseMethod"
+                android:enabled="false"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:text="Sygnal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSygnal"
+                android:layout_weight="0.2"
+                android:enabled="false"
+                android:onClick="Test"
+                />
+
+            <Button
+                android:text="IFFT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnIFFT"
+                android:layout_weight="0.2"
+                android:enabled="false"
+                android:onClick="FFT_jtransform"
+                />
+
+            <Button
+                android:text="Odczyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnOdczyt"
+                android:layout_weight="0.2"
+                android:enabled="false"
+                android:onClick="odczyt"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
